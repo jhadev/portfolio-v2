@@ -8,18 +8,18 @@ const App = () => {
   const [isRetro, setUI] = useState(false);
   return (
     <>
-      <Button
-        p={3}
-        variantColor="grey"
-        height="50px"
-        rounded="lg"
-        fontSize="xl"
-        width="100%"
-        mx="auto"
-        mb={2}
+      <button
+        // p={3}
+        // variantColor="gray"
+        // height="50px"
+        // rounded="lg"
+        // fontSize="xl"
+        // width="100%"
+        // mx="auto"
+        // mb={2}
         onClick={() => setUI(prevUI => !prevUI)}>
         {isRetro ? 'modern' : 'retro'}
-      </Button>
+      </button>
       {!isRetro ? <Modern /> : <Retro />}
     </>
   );
