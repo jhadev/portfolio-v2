@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
+import Modern from './components/Modern';
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <div>Hi!</div>
-    </div>
+    <>
+      <Modern />
+    </>
   );
-}
+};
 
 export default App;
