@@ -1,12 +1,28 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
+import Modern from './components/Modern';
+import Retro from './components/Retro';
+import { Button } from '@chakra-ui/core';
 
-function App() {
+const App = () => {
+  const [isRetro, setUI] = useState(false);
   return (
-    <div>
-      <div>Hi!</div>
-    </div>
+    <>
+      <button
+        // p={3}
+        // variantColor="gray"
+        // height="50px"
+        // rounded="lg"
+        // fontSize="xl"
+        // width="100%"
+        // mx="auto"
+        // mb={2}
+        onClick={() => setUI(prevUI => !prevUI)}>
+        {isRetro ? 'modern' : 'retro'}
+      </button>
+      {!isRetro ? <Modern /> : <Retro />}
+    </>
   );
-}
+};
 
 export default App;
