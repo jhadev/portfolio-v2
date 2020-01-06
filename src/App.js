@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
-import Modern from './components/Modern';
-import Retro from './components/Retro';
+import Modern from './pages/Modern';
+import Retro from './pages/Retro';
 import { Button } from '@chakra-ui/core';
 
 const App = () => {
